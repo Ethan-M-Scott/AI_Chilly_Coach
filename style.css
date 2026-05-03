@@ -1,47 +1,92 @@
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
+    background-color: #050505;
+    color: #ffffff;
+    font-family: 'Inter', -apple-system, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
+    margin: 0;
 }
 
 .card {
-    background: #111;
+    background: #111111;
     border: 1px solid #ba0c2f; /* UGA Red */
     border-radius: 12px;
     padding: 30px;
     width: 100%;
-    max-width: 600px;
-    box-shadow: 0 10px 30px rgba(186, 12, 47, 0.1);
+    max-width: 650px;
+    box-shadow: 0 15px 35px rgba(186, 12, 47, 0.15);
 }
 
-input, select, button {
+h1 {
+    color: #ba0c2f;
+    margin-top: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+textarea {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 6px;
-    border: none;
+    height: 120px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #ba0c2f;
+    box-shadow: 0 0 10px rgba(186, 12, 47, 0.3);
 }
 
 button {
     background-color: #ba0c2f;
     color: white;
     font-weight: bold;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    font-size: 16px;
+    transition: 0.2s;
 }
 
 button:hover {
-    background-color: #a00a26;
+    background-color: #900a24;
+    transform: translateY(-1px);
 }
 
 #play-display {
     margin-top: 30px;
-    border-top: 1px solid #333;
-    padding-top: 20px;
+    line-height: 1.7;
+    text-align: left;
 }
 
-.role { color: #ba0c2f; font-weight: bold; }
+.play-box {
+    background: #1a1a1a;
+    padding: 25px;
+    border-left: 5px solid #ba0c2f;
+    border-radius: 0 8px 8px 0;
+}
+
+.play-box h2 {
+    color: #ba0c2f;
+    margin-top: 0;
+    font-size: 1.4rem;
+}

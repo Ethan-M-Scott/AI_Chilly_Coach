@@ -3,36 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chilly-Coach AI | Tactical Playbook</title>
+    <title>Chilly-Coach AI | UGA Ultimate</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="card">
         <h1>Chilly-Coach AI</h1>
-        <p>Strategic Play Generator for UGA ChillyDawgs</p>
+        <p>Strategic Intelligence for the UGA Chillydawgs</p>
         
-        <label for="defense">Opponent Defense:</label>
-        <select id="defense">
-            <option value="Man-to-Man">Man-to-Man</option>
-            <option value="2-3-2 Zone">2-3-2 Zone</option>
-            <option value="Cup Zone">Cup Zone</option>
-            <option value="Force Home">Force Home (Sideline)</option>
-            <option value="Force Away">Force Away (Sideline)</option>
-        </select>
-
-        <label for="weather">Weather Conditions:</label>
-        <select id="weather">
-            <option value="Calm/No Wind">Calm/No Wind</option>
-            <option value="High Crosswind">High Crosswind</option>
-            <option value="Upwind/Downwind">Upwind/Downwind</option>
-            <option value="Rainy/Slippery">Rainy/Slippery</option>
-        </select>
+        <label for="situation">Game Situation:</label>
+        <textarea id="situation" placeholder="e.g. Down by 2, opponent is running a cup zone, high crosswind..."></textarea>
 
         <button onclick="generatePlay()">Generate Tactical Play</button>
 
         <div id="play-display">
             </div>
     </div>
+
     <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
